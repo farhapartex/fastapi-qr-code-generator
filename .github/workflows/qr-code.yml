@@ -1,0 +1,13 @@
+name: QR Code Generator Workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run: echo "Started Running QR FastAPI BE"
+
+            - name: List Files
+              run: ls
