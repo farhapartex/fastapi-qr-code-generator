@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Welcome Message
-              run: echo "Started Running QR FastAPI BE"
+              run: sh echo "Started Running QR FastAPI BE"
 
             - name: List Files
-              run: ls
+              run: sh ls
