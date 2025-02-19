@@ -11,6 +11,11 @@ jobs:
             
             - name: Checkout Repository
               uses: actions/checkout@v3
+            
+            - name: Install system dependecies
+              run: |
+               sudo apt update
+               sudo apt install -y libjpeg-dev zlib1g-dev libzbar0
 
             - name: Install Dependecies
               run: |
