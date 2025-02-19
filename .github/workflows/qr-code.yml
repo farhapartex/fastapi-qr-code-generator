@@ -10,7 +10,7 @@ jobs:
               run: echo "Started Running QR FastAPI BE"
             
             - name: Checkout Repository
-              run: actions/checkout@v3
+              uses: actions/checkout@v3
 
             - name: Install Dependecies
               run: |
