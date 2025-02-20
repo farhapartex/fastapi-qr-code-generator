@@ -9,7 +9,7 @@ def test_generate_qr():
     assert "qr_code" in response.json()
 
 def test_decode_qr():
-    file_path = "sample_qr.png"  # Make sure you have a sample QR code for testing
+    file_path = "tests/qr-code.png"  # Make sure you have a sample QR code for testing
     with open(file_path, "rb") as file:
         response = client.post("/decode_qr", files={"file": file})
     assert response.status_code == 200
